@@ -1,0 +1,155 @@
+<html>
+<head>
+
+<title>Not So Linear</title>
+
+<style>
+body {
+
+}
+@font-face {
+  font-family: 'Light';
+  src:  url('Maison Neue/MaisonNeue-Light.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Bold';
+  src:  url('Maison Neue/MaisonNeue-Bold.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Book';
+  src:  url('Maison Neue/MaisonNeue-Book.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Demi';
+  src:  url('Maison Neue/MaisonNeue-Demi.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Medium';
+  src:  url('Maison Neue/MaisonNeue-Medium.otf') format('opentype');
+}
+.section {
+	margin-top: 30px;
+}
+
+.section a{
+	text-decoration: none;
+	color: #35db8c;
+	-webkit-transition: color 0.5s; /* Safari */
+    transition: color 0.5s;
+}
+
+.highlight {
+	color: #35db8c;
+}
+.bold {
+	font-family: 'Bold', Fallback, serif;
+}
+.section a:hover {
+	color:black;
+
+}
+
+#blog_body {
+	margin: 10%;
+}
+#introp {
+	margin-top: 40px;
+}
+.header {
+    position: fixed;
+    top: 2px;
+    left: 15px;
+    right: 9px;
+    min-height: 50px;
+}
+#blog_body {
+	font-family: 'Medium', Fallback, serif;
+}
+.asterix {
+	font-size: 10pt;
+	margin-left: 30px;
+	margin-bottom: 10px;
+}
+</style>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script>
+$(window).scroll(
+    {
+        previousTop: 0
+    }, 
+    function () {
+    var currentTop = $(window).scrollTop();
+    if (currentTop < this.previousTop) {
+        $(".header").show(100);
+    } else {
+        $(".header").hide(100);
+    }
+    this.previousTop = currentTop;
+});
+</script>
+
+</head>
+
+<body>
+<div class="header"><h2 class="bold">NOT SO LINEAR</h2></div>
+
+<div id="blog_body">
+	<h1>Collaborative Decision Making Between Doctors and AI <h1> 
+		<h2>What, why, and how?</h2>
+	<div id="introp" class="section">
+		<p class="intro">Hi! We are <a href="http://harboe.me/">Louis</a> and <a href="https://www.parkermalachowsky.com/">Parker</a>, two seniors in USC's <a href="">Iovine and Young Academy</a> studying a combination of design, technology, and entrepreneurship. For our thesis, we are exploring how we as interface designers can improve the intepretability of deep neural networks*.		</p>
+		<p class="asterix">*these are what enable some of the smartest AI systems to <em>think</em> and make decisions</p>
+		<p>We are focused on building interfaces that allow for doctors to interact with </p>
+
+
+		<p class="intro">Please explore some of our motivations, findings, and thoughts below. We aim for our work to be accessible and meaningful to everyone, so even if the above sentence about <em>deep neural networks</em> doesn't mean much to you, we hope you keep reading. AI will touch all of our lives in</p>
+
+		<p class="intro">(And thanks to <a href="https://www.ldeming.com/longevityfaq/">Laura Deming</a> for fully inspiring the look and feel of this page.)</p>
+	<div>
+	<div id="overview" class="section">
+		<h2>Overview</h2>
+		<ul class="level1">
+		  <li>Terminology
+			     <ul class="level2">
+			        <li>
+			        	<ul class="level3">
+			            	<li>AI</li>
+			            	<li>Machine Learning</li>
+			            	<li>Deep Learning</li>
+			          	</ul>
+			     </ul>
+		  </li>
+		  <li>Motivation
+			     <ul class="level2">
+			        <li>Deep learning is different.
+			        	<ul class="level3">
+			            	<li>Power</li>
+			            	<li>Problem</li>
+			            	<li>Oppurtunity</li>
+			          	</ul>
+			     </ul>
+		  </li>
+		</ul>
+	</div>
+	<div class="section">
+		<h2>What do we mean when we say AI, machine learning, and deep learning?</h2>
+	</div>
+	<div class="section">
+		<h2>The power of deep learning</h2>
+	</div>
+	<div class="section">
+		<h2>The problem with deep learning</h2>
+	</div>
+	<div class="section">
+		<h2>A new oppurtunity for deep learning</h2>
+	</div>
+	<div class="section">
+		<h2>Building interfaces that allow for collaborative decision making</h2>
+	</div>
+</div>
+</body>
+
+</html>
