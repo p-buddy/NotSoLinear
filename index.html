@@ -5,9 +5,9 @@
 
 <style>
 body {
-
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
-@font-face {
+/*@font-face {
   font-family: 'Light';
   src:  url('Maison Neue/MaisonNeue-Light.otf') format('opentype');
 }
@@ -26,6 +26,15 @@ body {
 @font-face {
   font-family: 'Medium';
   src:  url('Maison Neue/MaisonNeue-Medium.otf') format('opentype');
+}*/
+
+.wrapper {
+	width: 768px;
+	margin: auto;
+	padding: 50px 0;
+}
+.logo {
+	margin-bottom: 30px;
 }
 .section {
 	margin-top: 30px;
@@ -45,17 +54,12 @@ body {
 .bold {
 	font-family: 'Bold', Fallback, serif;
 }
+
 .section a:hover {
 	color:black;
 
 }
 
-#blog_body {
-	margin: 10%;
-}
-#introp {
-	margin-top: 40px;
-}
 .header {
     position: fixed;
     top: 2px;
@@ -63,9 +67,7 @@ body {
     right: 9px;
     min-height: 50px;
 }
-#blog_body {
-	font-family: serif;
-}
+
 .asterix {
 	font-size: 10pt;
 	margin-left: 10%;
@@ -77,29 +79,37 @@ body {
 
 /* Style the buttons inside the tab */
 .tab button {
-	font-family: serif;
 	font-size: 12pt;
-    background-color: inherit;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding-left: 2px;
-    padding-right: 1px;
-    transition: 0.3s;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding-left: 2px;
+	padding-right: 1px;
+	transition: 0.3s;
+	background-color: white;
+	position: relative;
+	box-shadow: 0 2px 0px rgba(41, 248, 150, 0.5), inset 0 -6px 0px rgba(41, 248, 150, 0.5);
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-    background-color: #ddd;
+   	background-color: rgba(41, 248, 150, 0.5);
+   	box-shadow: none;
+
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
     background-color: #ccc;
 }
+
+
 .dropdown {
     position: relative;
     display: inline-block;
+   	
+
+
 }
 .dropdown-content {
     display: none;
@@ -126,8 +136,9 @@ body {
 .tooltip {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black;
-    text-decoration: underline; 
+    border-bottom: 2px dotted rgba(41, 248, 150, 0.5);
+    border-
+
 }
 
 /* Tooltip text */
@@ -150,7 +161,33 @@ body {
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
     visibility: visible;
+    background: white;
+    border-radius: 4px;
+    padding: 2px;
 }
+
+.toggle {
+	cursor: pointer;
+	border-bottom: 3px solid rgba(41, 248, 150, 0.5);
+
+}
+.toggle:hover {
+	background-color: rgba(41, 248, 150, 0.5);
+	border:none;
+
+}
+.toggle span.toggle-on {
+	display: inline;
+}
+.toggle span.toggle-off {
+	display: none;
+}
+.explanation {
+}
+ p, li {
+ 	line-height: 1.4em;
+ }
+
 </style>
 <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -172,53 +209,68 @@ $(window).scroll(
 });
 </script>
 <script>
+$( document ).ready(function() {
+	// first run
+});
 
-var updateDescription = function(element, type) {
-	phraseStart = "";
-	phraseEnd = "";
-	block = '<div class="dropdown-content"><p class="dropdown-selector" onclick="updateDescription(this,' + "'simple'" + ')">Simply</p><p class="dropdown-selector" onclick="updateDescription(this, ' + "'notsimple'" + ')">Not so simply</p></div>';
+$(document).on('click','.toggle',function() {
+	var toggleID = $(this).data("tid");
+	$(this).find('span').toggleClass('toggle-on toggle-off');
+	var explanationText = ", " + $('.toggle-on').data("expl");
+	$(".explanation[data-tid='" + toggleID + "']").html(explanationText);
+});
 
-	if (type === 'simple') {
-		phraseStart = "Simply";
-		phraseEnd = "we want to use interface design to remove some of the mystery around how a modern AI makes decisions. That way doctors can interact with and trust in an AI's responses and use them to better treat patients"
-	}
-	else {
-		phraseStart = "Not so simply";
-		phraseEnd = "we are exploring how interface design can improve the intepretability of <button class='tooltip'>deep neural networks<span class='tooltiptext'>These are the things that enable some of the smartest AI systems to <em>think</em> and make decisions.</span></button>. That way doctors can fully scrutinize the conclusions of an AI and use them to augment their own thinking."
-	}
-	element.classList.add("selected-dropdown");
-	document.getElementById("simple-selector").innerHTML = phraseStart + ',' + block;
-	document.getElementById("description").innerHTML = phraseEnd;
-};
+// var updateDescription = function(element, type) {
+// 	phraseStart = "";
+// 	phraseEnd = "";
+// 	block = '<div class="dropdown-content"><p class="dropdown-selector" onclick="updateDescription(this,' + "'simple'" + ')">Simply</p><p class="dropdown-selector" onclick="updateDescription(this, ' + "'notsimple'" + ')">Not so simply</p></div>';
+
+// 	if (type === 'simple') {
+// 		phraseStart = "Simply";
+// 		phraseEnd = "we want to use interface design to remove some of the mystery around how a modern AI makes decisions. That way doctors can interact with and trust in an AI's responses and use them to better treat patients"
+// 	}
+// 	else {
+// 		phraseStart = "Not so simply";
+// 		phraseEnd = "we are exploring how interface design can improve the intepretability of <button class='tooltip'>deep neural networks<span class='tooltiptext'>These are the things that enable some of the smartest AI systems to <em>think</em> and make decisions.</span></button>. That way doctors can fully scrutinize the conclusions of an AI and use them to augment their own thinking."
+// 	}
+// 	element.classList.add("selected-dropdown");
+// 	document.getElementById("simple-selector").innerHTML = phraseStart + ',' + block;
+// 	document.getElementById("description").innerHTML = phraseEnd;
+// };
+
+
+
 </script>
 </head>
 
 <body>
-<div class="header"><h2 class="bold">NOT SO LINEAR</h2></div>
+
+
+<div class="wrapper">
+		<img src="logo.svg" alt="notsolinear logo" class="logo">
 
 <div id="blog_body">
-	<h1>Collaborative Decision Making Between Doctors and AI <h1> 
-		<h2>What, why, and how?</h2>
-	<div id="introp" class="section">
-		<div class="tab">
-			<p class="intro">Hi! We are <a href="http://harboe.me/">Louis</a> and <a href="https://www.parkermalachowsky.com/">Parker</a>, two seniors in USC's <a href="http://iovine-young.usc.edu/">Iovine and Young Academy</a>.   
-				<button id="simple-selector" class="dropdown">Simply,
- 					<div class="dropdown-content">
-    					<p class="dropdown-selector" onclick="updateDescription(this, 'simple')">Simply</p>
-    					<p class="dropdown-selector" onclick="updateDescription(this, 'notsimple')">Not so simply</p>
-  					</div>
-				</button>
-				<span id="description">we want to use interface design to remove some of the mystery around how a modern AI makes decisions. That way doctors can interact with and trust in an AI's responses and use them to better treat patients.</span></p> 
-		</div>
 
-	
-<!-- 		<p class="intro">Hi! We are <a href="http://harboe.me/">Louis</a> and <a href="https://www.parkermalachowsky.com/">Parker</a>, two seniors in USC's <a href="http://iovine-young.usc.edu/">Iovine and Young Academy</a>. Simply, we want to see if the right interface is the key to building trust between doctors and AI. Not so simply, we are exploring how interface design can improve the intepretability of deep neural networks, so that doctors can scrutinize the conclusions an AI comes to on critical decisions.</p>  -->
+	<h1>Collaborative Decision Making <br/>Between Doctors and AI </h1> 
+	<div class="section">
+				<h2>What, why, and how?</h2>
+
+			<p class="intro">Hi! We are <a href="http://harboe.me/">Louis</a> and <a href="https://www.parkermalachowsky.com/">Parker</a>, two seniors in USC's <a href="http://iovine-young.usc.edu/">Iovine and Young Academy</a>.
+				<span data-tid="aiDecision" class="toggle">
+					<span class="toggle-on" data-expl="we want to use interface design to remove some of the mystery around how a modern AI makes decisions. That way doctors can interact with and trust in an AI's responses and use them to better treat patients.">Simply</span>
+					<span class="toggle-off" data-expl="we are exploring how interface design can improve the intepretability of <span class='tooltip'>deep neural networks<span class='tooltiptext'>These are the things that enable some of the smartest AI systems to <em>think</em> and make decisions.</span></span>. That way doctors can fully scrutinize the conclusions of an AI and use them to augment their own thinking.">Not so simply</span>
+				</span>
+				<span data-tid="aiDecision" class="explanation">
+					we want to use interface design to remove some of the mystery around how a modern AI makes decisions. That way doctors can interact with and trust in an AI's responses and use them to better treat patients.
+				</span>
+   
+
 
 <!-- 			<p class="asterix">*These are the things that enable some of the smartest AI systems to <em>think</em> and make decisions. We will explain what allows these things to tackle sophisticated problems, as well as why this ability also makes it difficult .  </p> -->
 
 		<p class="intro">(Thanks to <a href="https://www.ldeming.com/longevityfaq/">Laura Deming</a> for wholly inspiring the look and feel of this page.)</p>
 	</div>
-	<div id="overview" class="section">
+	<div class="section">
 		<h2>Overview</h2>
 
 		<p class="intro">Please check out some of our motivations, findings, and thoughts below. We aim for our work to be accessible and meaningful to everyone, so we hope you keep reading whether you even if the above sentence about neural networks didn't mean much to you.</p>
@@ -261,6 +313,7 @@ var updateDescription = function(element, type) {
 	<div class="section">
 		<h2>Building interfaces that allow for collaborative decision making</h2>
 	</div>
+</div>
 </div>
 </body>
 
