@@ -42,7 +42,7 @@ body {
 
 .section a{
 	text-decoration: none;
-	color: #0075ac;
+	color: #c3158d;
 	-webkit-transition: color 0.5s; /* Safari */
     transition: color 0.5s;
     /*font-weight: bold;*/
@@ -186,6 +186,19 @@ body {
 }
  p, li {
  	line-height: 1.4em;
+}
+
+img.centered {
+     position:fixed;
+     left: 50%;
+     top:  50%;
+     /*
+         if, for instance, the image is 64x64 pixels,
+         then "move" it half its width/height to the
+         top/left by using negative margins
+     */
+     margin-left: -32px;
+     margin-top:  -32px;
  }
 
 </style>
@@ -273,20 +286,20 @@ $(document).on('click','.toggle',function() {
 	<div class="section">
 		<h2>Overview</h2>
 
-		<p class="intro">Please check out some of our motivations, findings, and thoughts below. We aim for our work to be accessible and meaningful to everyone, so we hope you keep reading whether you even if the above sentence about neural networks didn't mean much to you.</p>
+		<p class="intro">Please check out some of our motivations, findings, and thoughts below. We aim for our work to be accessible to everyone, so we hope you keep reading regardless of your familiarity with AI.</p>
 
 		<ul class="level1">
-		  <li>Terminology
+		  <li><a href="#terminology">Terminology</a>
 			     <ul class="level2">
 			        <li>What do we words mean? 
 			        	<ul class="level3">
-			            	<li>AI</li>
-			            	<li>Machine Learning</li>
-			            	<li>Deep Learning</li>
+			            	<li><a href="#AI">AI</a></li>
+			            	<li><a href="#ML">Machine Learning</a></li>
+			            	<li><a href="#DL">Deep Learning</a></li>
 			          	</ul>
 			     </ul>
 		  </li>
-		  <li>Motivation
+		  <li>Motivation — <strong><em>Published by 8:00AM, 1/11</strong></em>
 			     <ul class="level2">
 			        <li>Deep learning is something new for healthcare.
 			        	<ul class="level3">
@@ -298,11 +311,50 @@ $(document).on('click','.toggle',function() {
 		  </li>
 		</ul>
 	</div>
-	<div class="section">
+	<div class="section" id="terminology">
+
 		<h2>What do we mean when we say AI, machine learning, and deep learning?</h2>
+			<p>You’ve probably heard these words thrown around a bunch — AI, machine learning, and deep learning. And sometimes it might seam like they can be used interchangebly.</p>
+			<p>But that's <strong>not</strong> really the case.</p>
+			<img src="all3.png" style="width: 40%; margin-left: 30%"></img>
+			<p>Though these concepts are all related, they actually imply pretty different things. And these differences are important in a field like healthcare where AI and machine learning have a long history of being applied, while deep learning represents something entirely new for to the field.</p>
+
+		<h3 id="AI"><strong>AI</strong> — <span style="font-weight: 400; font-style: italic">makes predictions</span></h3>
+			<p>An AI is really just any computer program that makes a prediction given some input. In this way, 'AI' can act as kind of an all-encompassing term for systems that make decisions.</p>
+			<img src="ai.png" style="width: 40%; margin-left: 30%"></img>
+			<p>Input → AI → Prediction ... Not too bad, right? And this kind of technology isn't anything new for healthcare.</p>
+			<p>A more than 40-year-old example is the <strong>Sokal score</strong>.</p>
+			<p>This is a program that takes in specific details about a leukemia patient, like their age, spleen size, and platelet count, and is then able to assign them a risk-level to indicate how aggressive their disease is. 
+			<img src="sokal.png" style="width: 80%; margin-left: 10%; margin-top: 10px;"></img>
+			<p>Perfect: Input → AI → Prediction .. So the program that generates the Sokal score is a clear example of an AI. But what does it do with the input values to turn them into a single, meaningful number? And how does it do this accurately?
+			<p>Thhis is where machine learning comes in!</p>
+
+		<h3 id="ML">Machine Learning —  <span style="font-weight: 400; font-style: italic">develops the formula</span></h3>
+			<p>Machine learning is how an AI develops the ability to take in some input values, manipulate them, and then put them together in a way that corresponds to an accurate prediction.
+			<img src="machinelearning.png" style="width: 40%; margin-left: 30%"></img>
+			<p>So if we take a peek inside how the Sokal score works, we see it's just a formula. It takes in the input variables and multiplies them each by a certain number.
+			<img src="sokalformulasolo.png" style="width: 80%; margin-left: 10%; margin-top: 10px;">
+			<p>Then when those results are all put together, we get a single value—the sokal score—that corresponds to that patient's risk level. </p>
+			<img src="sokalformulaanswer.png" style="width: 80%; margin-left: 10%; margin-top: 10px;">
+			<p>The magic of what makes this work is getting the right numbers that the inputs are multiplied by — and the process to get those right numbers is machine learning. </p>
+			<img src="sokalformulahighlight.png" style="width: 80%; margin-left: 10%; margin-top: 10px;">
+
+		<h3 id="DL">Deep Learning —  <span style="font-weight: 400; font-style: italic">develops its own strategies</span></h3>
+			<p>Deep learning is how an AI develops the ability to take in a large, abstract input (like a picture), break it apart in ways that <strong><em>the AI</strong></em> determines are important, and then manipulate this information to arrive at a prediction.</p>
+			<img src="deeplearning.png" style="width: 40%; margin-left: 30%"></img>
+			<p>Now what if you needed an AI to make a decision that depended on a whole bunch of factors? A lot more than the number of inputs that Joseph Sokal determined were important for classifying leukemia patients.</p>
+
+			<p>More specifically, what if you wanted an AI to takle a problem that depended on so many factors that you couldn't even identify them all yourself? The kind of decision that would require years of training to make? The kind of a decision an expert, like a doctor would make? </p>
+			<img src="deeplearningmodel.png" style="width: 80%; margin-left: 10%; margin-top: 10px;">
+			<div style="width: 80%; margin-left: 10%; margin-top: 10px; text-align: left;" >
+			<span style="font-size: 8pt; font-style: italic;">Actually, problems of this nature are a lot more complicated than mastering 9 things, as is pictured above. To get a feel for the size of problems we're talking about here, consider the very common example of self-driving cars. Would you be able to tell a computer all of the inputs it should focus on while driving — from paying attention to red traffic lights to avoiding contact with blue SUVs? As you consider all the knowledge you need to drive (that you've built up since birth), you might be reminded of this <a href="https://www.youtube.com/watch?v=sr65UeZwRhE">Spongebob episode</a>.</span></div>
+			<p>This is where deep learning comes in — as it can actually learn the factors it should consider to make a decision. Because these factors are determined by the AI, we actually don't know what they are, so we represent them below with question marks.</p>
+			<img src="deeplearningqs.png" style="width: 80%; margin-left: 10%; margin-top: 10px;">
+			<p>Isn't that pretty remarkable? That, through deep learning, an AI can develop its own strategy for making a decision (as opposed to optimizing a strategy it's given, like in finding what to multiply a patient's age and spleen size by as in the Sokal score.) 
 	</div>
 	<div class="section">
 		<h2>The power of deep learning</h2>
+		<p><strong><em>Published by 8:00AM, 1/11</strong></em></p>
 	</div>
 	<div class="section">
 		<h2>The problem with deep learning</h2>
