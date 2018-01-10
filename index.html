@@ -318,20 +318,20 @@ $(document).on('click','.toggle',function() {
 			<p>You’ve probably heard these words thrown around a bunch — AI, machine learning, and deep learning. And sometimes it might seam like they can be used interchangebly.</p>
 			<p>But that's <strong>not</strong> really the case.</p>
 			<img src="all3.png" style="width: 40%; margin-left: 30%"></img>
-			<p>Though these concepts are all related, they actually imply pretty different things. And these differences are important in a field like healthcare where AI and machine learning have a long history of being applied, while deep learning represents something entirely new for to the field.</p>
+			<p>Though these concepts are all related, they actually imply pretty different things. AI and machine learning have a long history of being applied within healthcare, while deep learning represents something entirely new to the field.</p>
 
 		<h3 id="AI"><strong>AI</strong> — <span style="font-weight: 400; font-style: italic">makes predictions</span></h3>
-			<p>An AI is really just any computer program that makes a prediction given some input. In this way, 'AI' can act as kind of an all-encompassing term for systems that make decisions.</p>
+			<p>An AI is really just any computer program that makes a prediction given some input. In this way, 'AI' can act as an all-encompassing term for systems that make decisions.</p>
 			<img src="ai.png" style="width: 40%; margin-left: 30%"></img>
-			<p>Input → AI → Prediction ... Not too bad, right? And this kind of technology isn't anything new for healthcare.</p>
+			<p>Input → AI → Prediction .. This kind of technology isn't anything new for healthcare.</p>
 			<p>A more than 40-year-old example is the <strong>Sokal score</strong>.</p>
-			<p>This is a program that takes in specific details about a leukemia patient, like their age, spleen size, and platelet count, and is then able to assign them a risk-level to indicate how aggressive their disease is. 
+			<p>This is a program that takes in specific details about a leukemia patient, like their age, spleen size, and platelet count. It is then able to assign them a risk-level to indicate how aggressive their disease is. </p>
 			<img src="sokal.png" style="width: 80%; margin-left: 10%; margin-top: 10px;"></img>
-			<p>Perfect: Input → AI → Prediction .. So the program that generates the Sokal score is a clear example of an AI. But what does it do with the input values to turn them into a single, meaningful number? And how does it do this accurately?
-			<p>Thhis is where machine learning comes in!</p>
+			<p>Perfect: Input → AI → Prediction .. The program that generates the Sokal score is a clear example of an AI. But what does it do with the input values to turn them into a single, meaningful number? And how does it do this accurately?
+			<p>This is where machine learning comes in!</p>
 
 		<h3 id="ML">Machine Learning —  <span style="font-weight: 400; font-style: italic">develops the formula</span></h3>
-			<p>Machine learning is how an AI develops the ability to take in some input values, manipulate them, and then put them together in a way that corresponds to an accurate prediction.
+			<p>Machine learning is how an AI develops the ability to take in some input values, manipulate them, and then put them together to create a prediction.
 			<img src="machinelearning.png" style="width: 40%; margin-left: 30%"></img>
 			<p>So if we take a peek inside how the Sokal score works, we see it's just a formula. It takes in the input variables and multiplies them each by a certain number.
 			<img src="sokalformulasolo.png" style="width: 80%; margin-left: 10%; margin-top: 10px;">
@@ -341,17 +341,17 @@ $(document).on('click','.toggle',function() {
 			<img src="sokalformulahighlight.png" style="width: 80%; margin-left: 10%; margin-top: 10px;">
 
 		<h3 id="DL">Deep Learning —  <span style="font-weight: 400; font-style: italic">develops its own strategies</span></h3>
-			<p>Deep learning is how an AI develops the ability to take in a large, abstract input (like a picture), break it apart in ways that <strong><em>the AI</strong></em> determines are important, and then manipulate this information to arrive at a prediction.</p>
+			<p>Deep learning is how an AI develops the ability to take in a large, abstract input (like a picture), break it apart in ways that <strong><em>the AI</strong></em> determines are important, and then manipulate it to arrive at a prediction.</p>
 			<img src="deeplearning.png" style="width: 40%; margin-left: 30%"></img>
-			<p>Now what if you needed an AI to make a decision that depended on a whole bunch of factors? A lot more than the number of inputs that Joseph Sokal determined were important for classifying leukemia patients.</p>
+			<p>Now what if you needed an AI to make a decision that depended on a whole bunch of factors? A lot more than the number of inputs that Joseph Sokal determined were important for sorting leukemia patients into risk groups.</p>
 
-			<p>More specifically, what if you wanted an AI to takle a problem that depended on so many factors that you couldn't even identify them all yourself? The kind of decision that would require years of training to make? The kind of a decision an expert, like a doctor would make? </p>
+			<p>More specifically, what if you wanted an AI to takle a problem that depended on so many factors that you couldn't even identify them all yourself? The kind of decision that requires an expert, like a doctor?</p>
 			<img src="deeplearningmodel.png" style="width: 80%; margin-left: 10%; margin-top: 10px;">
 			<div style="width: 80%; margin-left: 10%; margin-top: 10px; text-align: left;" >
-			<span style="font-size: 8pt; font-style: italic;">Actually, problems of this nature are a lot more complicated than mastering 9 things, as is pictured above. To get a feel for the size of problems we're talking about here, consider the very common example of self-driving cars. Would you be able to tell a computer all of the inputs it should focus on while driving — from paying attention to red traffic lights to avoiding contact with blue SUVs? As you consider all the knowledge you need to drive (that you've built up since birth), you might be reminded of this <a href="https://www.youtube.com/watch?v=sr65UeZwRhE">Spongebob episode</a>.</span></div>
-			<p>This is where deep learning comes in — as it can actually learn the factors it should consider to make a decision. Because these factors are determined by the AI, we actually don't know what they are, so we represent them below with question marks.</p>
+			<span style="font-size: 8pt; font-style: italic;">Problems that deep learning is suited for are actually a lot more complicated than picking out 9 un-identified factors, as is pictured above. To get a feel for the complexity of the problems we're talking about here, consider self-driving cars. Would you be able to tell an autopilot program all of the inputs it should focus on while driving — from interpreting roadsigns to avoiding different types of vehicles?  Thinking through this reminds me of <a href="https://youtu.be/sr65UeZwRhE?t=25s">this Spongebob episode</a>.</span></div>
+			<p>This is where deep learning comes in — as it can actually learn the factors it should consider to make a decision. Because these factors are determined by the AI, we actually don't know what they are, so we represent them with question marks.</p>
 			<img src="deeplearningqs.png" style="width: 80%; margin-left: 10%; margin-top: 10px;">
-			<p>Isn't that pretty remarkable? That, through deep learning, an AI can develop its own strategy for making a decision (as opposed to optimizing a strategy it's given, like in finding what to multiply a patient's age and spleen size by as in the Sokal score.) 
+			<p>Isn't that pretty remarkable? That, through deep learning, an AI can develop its own strategy for making a decision (instead of optimizing a strategy it's given, like in finding what to multiply a patient's age and spleen size by in the Sokal score formula.) 
 	</div>
 	<div class="section">
 		<h2>The power of deep learning</h2>
