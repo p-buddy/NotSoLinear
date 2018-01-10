@@ -137,19 +137,18 @@ body {
     position: relative;
     display: inline-block;
     border-bottom: 2px dotted rgba(41, 248, 150, 0.5);
-    border-
-
 }
 
 /* Tooltip text */
 .tooltip .tooltiptext {
-	width: 800px;
+	width: 100%;
     top: 100%;
     left: 0%;
-    margin-left: 0px;
+    margin: 5px;
     visibility: hidden;
     text-align: left;
-    padding: 0px 0;
+    font-weight: 100;
+    padding: 10px 10px;
     border-radius: 6px;
     font-size: 10pt;
  
@@ -164,6 +163,8 @@ body {
     background: white;
     border-radius: 4px;
     padding: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .toggle {
@@ -271,7 +272,7 @@ $(document).on('click','.toggle',function() {
 			<p class="intro">Hi! We are <a href="http://harboe.me/">Louis</a> and <a href="https://www.parkermalachowsky.com/">Parker</a>, two seniors in USC's <a href="http://iovine-young.usc.edu/">Iovine and Young Academy</a>.
 				<span data-tid="aiDecision" class="toggle">
 					<span class="toggle-on" data-expl="we want to use interface design to remove some of the mystery around how a modern AI makes decisions. That way doctors can interact with and trust in an AI's responses and use them to better treat patients.">Simply</span>
-					<span class="toggle-off" data-expl="we are exploring how interface design can improve the intepretability of <span class='tooltip'>deep neural networks<span class='tooltiptext'>These are the things that enable some of the smartest AI systems to <em>think</em> and make decisions.</span></span>. That way doctors can fully scrutinize the conclusions of an AI and use them to augment their own thinking.">Not so simply</span>
+					<span class="toggle-off" data-expl="we are exploring how interface design can improve the intepretability of <span class='tooltip'>deep neural networks<span class='tooltiptext'>These are what enable some of the smartest AI systems to <em>think</em> and make decisions.</span></span>. That way doctors can fully scrutinize the conclusions of an AI and use them to augment their own thinking.">Not so simply</span>
 				</span>
 				<span data-tid="aiDecision" class="explanation">
 					we want to use interface design to remove some of the mystery around how a modern AI makes decisions. That way doctors can interact with and trust in an AI's responses and use them to better treat patients.
