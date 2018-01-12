@@ -292,21 +292,22 @@ $(document).on('click','.toggle',function() {
 		<ul class="level1">
 		  <li><a href="#terminology">Terminology</a>
 			     <ul class="level2">
-			        <li>What do we words mean? 
+			        <li>What are the important words in AI and what do they mean?
 			        	<ul class="level3">
 			            	<li><a href="#AI">AI</a></li>
-			            	<li><a href="#ML">Machine Learning</a></li>
-			            	<li><a href="#DL">Deep Learning</a></li>
+			            	<li><a href="#ML">Machine learning</a></li>
+			            	<li><a href="#DL">Deep learning</a></li>
 			          	</ul>
 			     </ul>
 		  </li>
-		  <li>Motivation — <strong><em>Published by 8:00AM, 1/11</strong></em>
+		  <li>Motivation 
 			     <ul class="level2">
 			        <li>Deep learning is something new for healthcare.
 			        	<ul class="level3">
 			            	<li>Power</li>
 			            	<li>Problem</li>
-			            	<li>Oppurtunity</li>
+			            	<li>Opportunity</li>
+
 			          	</ul>
 			     </ul>
 		  </li>
@@ -315,20 +316,21 @@ $(document).on('click','.toggle',function() {
 	<div class="section" id="terminology">
 
 		<h2>What do we mean when we say AI, machine learning, and deep learning?</h2>
-			<p>You’ve probably heard these words thrown around a bunch — AI, machine learning, and deep learning. And sometimes it might seam like they can be used interchangebly.</p>
+			<p>You’ve probably heard these words thrown around a bunch — AI, machine learning, and deep learning. And sometimes it might seam like they can be used interchangeably.</p>
 			<p>But that's <strong>not</strong> really the case.</p>
 			<img src="all3.png" style="width: 40%; margin-left: 30%"></img>
-			<p>Though these concepts are all related, they actually imply pretty different things. AI and machine learning have a long history of being applied within healthcare, while deep learning represents something entirely new to the field.</p>
+			<p>Though these concepts are all related, they actually imply pretty different things. </p>
+			<!-- <p>AI and machine learning have a long history of being applied within healthcare, while deep learning represents something entirely new to the field.</p> -->
 
 		<h3 id="AI"><strong>AI</strong> — <span style="font-weight: 400; font-style: italic">makes predictions</span></h3>
-			<p>An AI is really just any computer program that makes a prediction given some input. In this way, 'AI' can act as an all-encompassing term for systems that make decisions.</p>
+			<p>An AI is just any computer program that makes a prediction given some input. In this way, 'AI' can act as an all-encompassing term for systems that make decisions.</p>
 			<img src="ai.png" style="width: 40%; margin-left: 30%"></img>
-			<p>Input → AI → Prediction .. This kind of technology isn't anything new for healthcare.</p>
-			<p>A more than 40-year-old example is the <strong>Sokal score</strong>.</p>
-			<p>This is a program that takes in specific details about a leukemia patient, like their age, spleen size, and platelet count. It is then able to assign them a risk-level to indicate how aggressive their disease is. </p>
+			<p>Input → AI → Prediction .. Therefore, we can call an AI a <span class='tooltip'><em>predictive model</em><span class='tooltiptext' style="width: 400px; padding: 10px;">No worries if you're not familiar with this idea of <em>models</em>. A way to think about them is that they take in a bit of data and then are able to associate that data with something else (either a single value, or multiple values). So the graph of y=2x+1 is a kind of model, as if you give it an x value, it will relate it to a corresponding y-value. The Sokal score explained below is also a model, as you give it some details about a patient, and it can link those to a risk-level value.</span></span>.</p>
+			<p>This is convenient because predicative models are common in healthcare. A more than 40-year-old example of one is the <strong>Sokal score</strong>.</p>
+			<p>This is a <a href="https://www.mdcalc.com/sokal-index-chronic-myelogenous-leukemia-cml">program</a> that takes in specific details about a leukemia patient, like their age, spleen size, and platelet count. It is then able to assign them a risk-level to indicate how aggressive their disease is. </p>
 			<img src="sokal.png" style="width: 80%; margin-left: 10%; margin-top: 10px;"></img>
-			<p>Perfect: Input → AI → Prediction .. The program that generates the Sokal score is a clear example of an AI. But what does it do with the input values to turn them into a single, meaningful number? And how does it do this accurately?
-			<p>This is where machine learning comes in!</p>
+			<p>Again, Input → AI → Prediction .. The computer program that generates the Sokal score is an example of an AI. But what does it do with the input values to turn them into a single, meaningful number? And how does it do this accurately?
+			<p>How a computer <em>learns</em> how to do this is where machine learning comes in!</p>
 
 		<h3 id="ML">Machine Learning —  <span style="font-weight: 400; font-style: italic">develops the formula</span></h3>
 			<p>Machine learning is how an AI develops the ability to take in some input values, manipulate them, and then put them together to create a prediction.
@@ -343,7 +345,7 @@ $(document).on('click','.toggle',function() {
 		<h3 id="DL">Deep Learning —  <span style="font-weight: 400; font-style: italic">develops its own strategies</span></h3>
 			<p>Deep learning is how an AI develops the ability to take in a large, abstract input (like a picture), break it apart in ways that <strong><em>the AI</strong></em> determines are important, and then manipulate it to arrive at a prediction.</p>
 			<img src="deeplearning.png" style="width: 40%; margin-left: 30%"></img>
-			<p>Now what if you needed an AI to make a decision that depended on a whole bunch of factors? A lot more than the number of inputs that Joseph Sokal determined were important for sorting leukemia patients into risk groups.</p>
+			<p>What if you needed an AI to make a decision that depended on a whole bunch of factors? A lot more than the number of inputs that Joseph Sokal determined were important for sorting leukemia patients into risk groups.</p>
 
 			<p>More specifically, what if you wanted an AI to takle a problem that depended on so many factors that you couldn't even identify them all yourself? The kind of decision that requires an expert, like a doctor?</p>
 			<img src="deeplearningmodel.png" style="width: 80%; margin-left: 10%; margin-top: 10px;">
@@ -355,13 +357,12 @@ $(document).on('click','.toggle',function() {
 	</div>
 	<div class="section">
 		<h2>The power of deep learning</h2>
-		<p><strong><em>Published by 8:00AM, 1/11</strong></em></p>
 	</div>
 	<div class="section">
 		<h2>The problem with deep learning</h2>
 	</div>
 	<div class="section">
-		<h2>A new oppurtunity for deep learning</h2>
+		<h2>A new opportunity for deep learning</h2>
 	</div>
 	<div class="section">
 		<h2>Building interfaces that allow for collaborative decision making</h2>
