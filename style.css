@@ -1,0 +1,217 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Settings */
+/* Responsive Stuff */
+.hero {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+/* Base */
+body {
+  font: 100% -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333; }
+
+.hero {
+  background-color: black;
+  padding-top: 50px; }
+  .hero h1 {
+    color: white; }
+  .hero span.so {
+    color: #29f896; }
+
+.wrapper {
+  margin: auto;
+  padding: 48px 24px; }
+  @media (min-width: 1024px) {
+    .wrapper {
+      width: 900px; } }
+  @media (min-width: 767px) {
+    .wrapper {
+      width: 600px; } }
+
+.section, .top-bar {
+  width: 100%;
+  position: relative; }
+  @media (min-width: 1366px) {
+    .section, .top-bar {
+      width: 1366px;
+      margin: auto; } }
+
+.section-content {
+  padding: 48px 24px; }
+  @media (min-width: 767px) {
+    .section-content {
+      padding: 7%;
+      width: 53%;
+      padding-right: 0; } }
+
+.top-bar {
+  background-color: black;
+  color: white;
+  position: fixed;
+  transition: all 1s cubic-bezier(0.55, 0.085, 0, 0.99);
+  z-index: 1;
+  height: 50px; }
+
+.nav-content {
+  padding: 0 24px;
+  line-height: 50px; }
+  @media (min-width: 767px) {
+    .nav-content {
+      padding: 0 7%; } }
+
+.nav-left {
+  float: left;
+  height: 100%; }
+
+.nav-right {
+  float: right;
+  height: 100%;
+  display: flex;
+  align-items: center; }
+  .nav-right ul {
+    display: flex; }
+  .nav-right li.item {
+    position: relative;
+    display: inline-flex;
+    padding-bottom: 0; }
+  .nav-right .link {
+    display: inline-flex;
+    align-items: center; }
+
+.marginnote {
+  float: right;
+  clear: right;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  vertical-align: baseline;
+  position: relative; }
+  @media (min-width: 767px) {
+    .marginnote {
+      margin-right: -63%;
+      width: 50%; } }
+
+.fullwidth {
+  margin: 1em -100%;
+  /* old browsers fallback */
+  margin: 0em calc(50% - 50vw) 0 -7vw;
+  width: 86vw;
+  background-color: rgba(0, 0, 0, 0.05);
+  margin-bottom: 24px;
+  padding: 48px 7vw; }
+
+figure {
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  margin: 0 0 3em 0; }
+
+img {
+  max-width: 100%; }
+
+.logo {
+  position: relative; }
+  .logo:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(-90deg, #1D6E9B 0%, #967B90 50%, #D1B365 100%);
+    border-radius: 10px; }
+
+h1 {
+  font-size: 2rem;
+  font-weight: 400; }
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 3.5vw; } }
+
+h2 {
+  font-size: 1.625rem;
+  font-weight: 500;
+  padding-bottom: 24px;
+  padding-top: 24px; }
+  @media (min-width: 1024px) {
+    h2 {
+      font-size: 2.8vw; } }
+  h2:first-child {
+    padding-top: 0; }
+
+h3 {
+  font-size: 1.375rem;
+  font-weight: 600;
+  padding-bottom: 24px;
+  padding-top: 24px; }
+
+p {
+  line-height: 1.75rem;
+  font-size: 110%;
+  margin-bottom: 24px; }
+
+ul:not(.list) li {
+  padding-left: 24px; }
+
+ul.list {
+  list-style: disc inside;
+  padding-bottom: 24px; }
+
+li {
+  line-height: 30px; }
+
+a {
+  text-decoration: none;
+  color: RGB(20, 129, 194);
+  position: relative; }
+  a:hover {
+    text-decoration: underline; }
+
+/*# sourceMappingURL=style.css.map */
