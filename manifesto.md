@@ -4,7 +4,7 @@ title: Manifesto
 permalink: manifesto
 ---
 
-## What, why, and how? ##
+## What, why, and how?
 
 Hi! We are [Louis](http://harboe.me/) and [Parker](https://www.parkermalachowsky.com/), two seniors in USC's [Iovine and Young Academy](http://iovine-young.usc.edu/).
 
@@ -12,7 +12,7 @@ Simply, we want to use interface design to remove some of the mystery around how
 
 (Thanks to [Laura Deming](https://www.ldeming.com/longevityfaq/) for wholly inspiring the look and feel of this page.)
 
-## Overview ##
+## Overview
 
 Please check out some of our motivations, findings, and thoughts below. We aim for our work to be accessible to everyone, so we hope you keep reading regardless of your familiarity with AI.
 
@@ -38,7 +38,7 @@ Please check out some of our motivations, findings, and thoughts below. We aim f
    * Our approach
 
 
-## What do we mean when we say AI, machine learning, and deep learning? ##
+## What do we mean when we say AI, machine learning, and deep learning?
 tldr; — Though AI, Machine Learning, and Deep Learning are related terms, we should distinguish between them when considering how to apply AI to healthcare. Essentially, an AI is a computer program that makes decisions. Machine learning is how that program learns to make accurate decisions. And deep learning is an exciting subset of machine learning that enables an AI to make accurate decisions when faced with large, abstract problems.
 
 
@@ -48,7 +48,7 @@ But that's **not** really the case.
 
 Though these concepts are all related, they actually imply pretty different things.
 
-### AI — _makes predictions_ ##
+### AI — _makes predictions_
 tldr; — An AI is a computer program that generates a prediction based on an input. With that definition in mind, AI isn't a new concept for healthcare professionals.  
 
   An AI is just any computer program that makes a prediction given some input. In this way, 'AI' can act as an all-encompassing term for systems that make decisions.  
@@ -98,10 +98,10 @@ This means that we can use deep-learning-powered AI to tackle problems that were
 
 * These problems, like driving a car or identifying a tumor, weren't necessarily too complex for computers. Instead, we just did not have an efficient way to communicate them in a way that computers could understand and master.
 
-## Deep learning is something new for healthcare. ##
+## Deep learning is something new for healthcare.
 
 
-### The power of deep learning ###
+### The power of deep learning
 
 tldr; The ability for deep learning systems to take on complex problems is getting people excited about how AI can impact healthcare—specifically over how it could limit diagnostic error and allow for earlier detection.
 
@@ -126,7 +126,7 @@ With accuracy like this, many researchers are confident that deep learning syste
 This is reinforced by the idea that deep learning systems may be considering factors doctors are not. Simply, maybe through deep learning an AI can find meaning in a mark, texture, or test result that a doctor isn't able to.
 
 
-### The problem with deep learning ###
+### The problem with deep learning
 
 As good as all of this sounds, the program's chance of getting the diagnosis incorrect is still not zero—it's around 30%. This would be an acceptable error-rate for a dermatologist, but its less acceptable for an AI.
 
@@ -146,7 +146,7 @@ Dr. Jorge Nieva, a medical oncologist at the USC Norris Comprehensive Cancer Cen
 
 > If the model is telling me something that is a matter of critical importance, even 90% accuracy is not good enough. I can’t deconvolute it. I can’t learn from it.
 
-### A new opportunity for deep learning ###
+### A new opportunity for deep learning
 
 This absence of trust between doctors and deep learning has created a split between what AI reachers are most excited about in healthcare and what solutions are actually getting applied.
 
@@ -169,7 +169,7 @@ Examples of Oracle AI include IBM Watson and the dermatology AI from earlier. Th
 So how can we fully utilize the power of AI to advance healthcare, but also respect that the only way to be applied is to be useful and usable to doctors?
 
 
-## Building interfaces that allow for collaborative decision making ##
+## Building interfaces that allow for collaborative decision making
 
 We believe the answer lives within this space of collaborative decision making.
 
@@ -184,7 +184,7 @@ The right interface can turn a powerful AI into a useful decision-making tool. I
 This allows for AIs to work together with humans, instead of simply trying to replace them (which is unlikely to happen anytime soon within medicine).
 
 
-### Our Approach ###
+### Our Approach 
 
 We are continuing to explore what kinds of features can make this interface most useful.
 * Histograms, heat maps, and other graphical representations the model IN ORDER TO provide clarity.
