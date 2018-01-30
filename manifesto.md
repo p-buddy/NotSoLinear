@@ -8,37 +8,33 @@ permalink: manifesto
 
 Hi! We are [Louis](http://harboe.me/) and [Parker](https://www.parkermalachowsky.com/), two seniors in USC's [Iovine and Young Academy](http://iovine-young.usc.edu/).
 
-Simply, we want to use interface design to remove some of the mystery around how a modern AI makes decisions. That way doctors can interact with and trust in an AI's responses and use them to better treat patients. Not so simply, we are exploring how interface design can improve the interpretability of deep neural networks. That way doctors can fully scrutinize the conclusions of an AI and use them to augment their own thinking.
+*We want to use interface design to remove some of the mystery around how a modern AI makes decisions. That way doctors can interact with and trust in an AI's responses and use them to better treat patients.*{: title="We are exploring how interface design can improve the interpretability of deep neural networks. That way doctors can fully scrutinize the conclusions of an AI and use them to augment their own thinking." .nsl}
 
 (Thanks to [Laura Deming](https://www.ldeming.com/longevityfaq/) for wholly inspiring the look and feel of this page.)
 
 ## Overview
+{: #overview}
 
 Please check out some of our motivations, findings, and thoughts below. We aim for our work to be accessible to everyone, so we hope you keep reading regardless of your familiarity with AI.
 
-* Terminology
-
-   What are the important words in AI and what do they mean?
-   * AI
-   * Machine learning
-   * Deep learning    
-
-
-* Motivation  
-
-	Deep learning (DL) is something new for healthcare.
-   * The power of DL
-   * The problem with DL
-   * The opportunity for DL in healthcare
-
-
-* Our Work
-
-   Collaborative decision making is the key to leveraging AI within healthcare.
-   * Our approach
+- [Terminology](#terminology)
+   - What are the important words in AI and what do they mean?
+   - AI
+   - Machine learning
+   - Deep learning    
+- [Motivation](#motivation) 
+	- Deep learning (DL) is something new for healthcare.
+   - The power of DL
+   - The problem with DL
+   - The opportunity for DL in healthcare
+- [Our work](#our-work) 
+   - Collaborative decision making is the key to leveraging AI within healthcare.
+   - Our approach
 
 
 ## What do we mean when we say AI, machine learning, and deep learning?
+{: #terminology}
+
 tldr; — Though AI, Machine Learning, and Deep Learning are related terms, we should distinguish between them when considering how to apply AI to healthcare. Essentially, an AI is a computer program that makes decisions. Machine learning is how that program learns to make accurate decisions. And deep learning is an exciting subset of machine learning that enables an AI to make accurate decisions when faced with large, abstract problems.
 
 
@@ -53,10 +49,9 @@ tldr; — An AI is a computer program that generates a prediction based on an in
 
   An AI is just any computer program that makes a prediction given some input. In this way, 'AI' can act as an all-encompassing term for systems that make decisions.  
 
-Input → AI → Prediction. Therefore, we can call an AI a predictive model.
-* No worries if you're not familiar with this idea of models. A way to think about them is that they take in a bit of data and then are able to associate that data with something else (either a single value, or multiple values). So the graph of y=2x+1 is a kind of model, as if you give it an x value, it will relate it to a corresponding y-value. The Sokal score explained below is also a model, as you give it some details about a patient, and it can link those to a risk-level value.
+Input → AI → Prediction. Therefore, we can call an AI a *predictive model.*{: title="No worries if you're not familiar with this idea of models. A way to think about them is that they take in a bit of data and then are able to associate that data with something else (either a single value, or multiple values). So the graph of y=2x+1 is a kind of model, as if you give it an x value, it will relate it to a corresponding y-value. The Sokal score explained below is also a model, as you give it some details about a patient, and it can link those to a risk-level value." .tooltip}
 
-This is convenient because predicative models are common in healthcare. A more than 40-year-old example of one is the ** Sokal score **.
+This is convenient because predicative models are common in healthcare. A more than 40-year-old example of one is the ** Sokal score. **
 This is a [program](https://www.mdcalc.com/sokal-index-chronic-myelogenous-leukemia-cml) that takes in specific details about a leukemia patient, like their age, spleen size, and platelet count. It is then able to assign them a risk-level to indicate how aggressive their disease is.
 
 Again, Input → AI → Prediction. The computer program that generates the Sokal score is an example of an AI. But what does it do with the input values to turn them into a single, meaningful number? And how does it do this accurately?
@@ -99,6 +94,7 @@ This means that we can use deep-learning-powered AI to tackle problems that were
 * These problems, like driving a car or identifying a tumor, weren't necessarily too complex for computers. Instead, we just did not have an efficient way to communicate them in a way that computers could understand and master.
 
 ## Deep learning is something new for healthcare.
+{: #motivation}
 
 
 ### The power of deep learning
@@ -170,6 +166,7 @@ So how can we fully utilize the power of AI to advance healthcare, but also resp
 
 
 ## Building interfaces that allow for collaborative decision making
+{: #our-work}
 
 We believe the answer lives within this space of collaborative decision making.
 
