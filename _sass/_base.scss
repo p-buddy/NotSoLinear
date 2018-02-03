@@ -9,57 +9,32 @@ img {
 	max-width: 100%;
 }
 
-// ul, ol {
-//   margin-left: $spacing-unit;
-//   margin-bottom: $spacing-unit;;
-//   li {
-//   	list-style: disc inside;
-//   	line-height: $spacing-unit;
-//   }
-// }
-
-
 ul, ol { /* targets all ul elements */
 	margin-bottom: $spacing-unit;
 
-	li { /* targets all li elements within a ul */
-  		line-height: $spacing-unit;
+	li { /* targets all li elements */
+		line-height: $base-line-height * 1.1;
   		list-style: disc inside;
 
     	ul, ol { /* targets all ul elements within an li element, itself within a ul */
 			margin-bottom: 0;
 			margin-left: $spacing-unit;
 
-			li {
-
-			}
 		}
 
 	}
 }
 
-// ul, ol li 
-
-
-
-
-// li {
-//   > ul,
-//   > ol {
-//     // margin-bottom: 0;
-//   }
-// }
-
 
 h1, h2, h3 {
 	padding: $spacing-unit 0;
 	line-height: 1.2;
-	font-weight: 400;
 }
 
 
 h1 {
 	font-size: rem(32px);
+	font-weight: 400;
 
 	@include media-query($tablet) {
 		font-size: 3.5vw;
@@ -111,10 +86,11 @@ a {
 	z-index: 1;
 	height: 50px;
 	width: 100%;
+	line-height: 50px;
 }
 
 .wrapper {
-  padding: 7vw $spacing-unit;
+  padding: 0 $spacing-unit;
 
    @include media-query($tablet) {
       margin: 0 auto;
@@ -125,6 +101,7 @@ a {
 .hero {
 	background-color: black;
 	color: white;
+	padding: 7vw 0;
 	// padding: calc(5vw + 50px) 0;
 	// @extend %v-center;
 
@@ -132,6 +109,10 @@ a {
 
 .section {
 	position: relative;
+}
+
+.page-content {
+	padding: 7vw 0;
 }
 
 .section-content {
@@ -149,6 +130,104 @@ a {
 
 .nsl {
 	color: blue;
+}
+
+
+.site-title {
+  float: left;
+
+  &,
+  &:visited {
+//    color: $grey-color-dark;
+  }
+}
+
+.site-nav {
+  float: right;
+
+  .nav-trigger {
+      display: none;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .page-link {
+    color: $tint-color;
+
+    // Gaps between nav items, but not on the last one
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+    // position: absolute;
+    top: 9px;
+    right: $spacing-unit / 2;
+    border-radius: 5px;
+    text-align: right;
+
+    label[for="nav-trigger"] {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 36px;
+      z-index: 2;
+      cursor: pointer;
+    }
+
+    .menu-icon {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 26px;
+      line-height: 0;
+      padding-top: 10px;
+      text-align: center;
+
+      > svg path {
+        fill: $tint-color;
+      }
+    }
+
+    input ~ .trigger {
+      clear: both;
+      display: none;
+    }
+
+    input:checked ~ .trigger {
+      display: block;
+      padding-bottom: 5px;
+    }
+
+    .page-link {
+      display: block;
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+      margin-left: 20px;
+    }
+}
+
+
+.logo {
+	color: white;
+
+
+	position: relative;
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		height: 3px;
+		background: $gradient;
+		border-radius: 10px;
+	}
+
 }
 
 /*
@@ -285,23 +364,7 @@ margin: 0 0 3em 0;
 img {
 	max-width: 100%;
 }
-.logo {
-	// color: rgb(41, 248, 150);
 
-
-	position: relative;
-	&:after {
-		content: '';
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		left: 0;
-		height: 3px;
-		background: $gradient;
-		border-radius: 10px;
-	}
-
-}
 
 h1 {
 	font-size: rem(32px);
