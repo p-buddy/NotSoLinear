@@ -5,4 +5,4 @@
 layout: home
 ---
 
-While we finish up this site, [read our manifesto.](/manifesto/)
+While we finish up this site, [read our manifesto.](/manifesto)
