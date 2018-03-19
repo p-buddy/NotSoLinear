@@ -4,6 +4,7 @@ title: Manifesto
 permalink: manifesto
 ---
 
+
 ## What, why, and how?
 
 Hi! We are [Louis](http://harboe.me/) and [Parker](https://www.parkermalachowsky.com/), two seniors in USC's [Iovine and Young Academy](http://iovine-young.usc.edu/).
@@ -11,6 +12,9 @@ Hi! We are [Louis](http://harboe.me/) and [Parker](https://www.parkermalachowsky
 *We want to use interface design to remove some of the mystery around how a modern AI makes decisions. That way doctors can interact with and trust in an AI's responses and use them to better treat patients.*{: title="We are exploring how interface design can improve the interpretability of deep neural networks. That way doctors can fully scrutinize the conclusions of an AI and use them to augment their own thinking." .nsl}
 
 (Thanks to [Laura Deming](https://www.ldeming.com/longevityfaq/) for wholly inspiring the look and feel of this page.)
+
+![Alt text]({{ "/assets/nsl-poster.png" | absolute_url }}){:title="fresh carrots"}
+{:fw}
 
 ## Overview
 {: #overview}
