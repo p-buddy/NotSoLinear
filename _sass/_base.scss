@@ -125,11 +125,11 @@ a {
 }
 
 .tooltip {
-	color: red;
+// Text that activates tooltips
 }
 
 .nsl {
-	color: blue;
+// Text that activates NSL
 }
 
 
@@ -155,6 +155,7 @@ a {
 
   .page-link {
     color: $tint-color;
+	float: left;
 
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
