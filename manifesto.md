@@ -13,8 +13,7 @@ Hi! We are [Louis](http://harboe.me/) and [Parker](https://www.parkermalachowsky
 
 (Thanks to [Laura Deming](https://www.ldeming.com/longevityfaq/) for wholly inspiring the look and feel of this page.)
 
-![Alt text]({{ "/assets/nsl-poster.png" | absolute_url }}){:title="fresh carrots"}
-{:fw}
+![Alt text]({{ "/assets/nsl-poster.png" | absolute_url }}){:title="fresh carrots"}{:fw}
 
 ## Overview
 {: #overview}
