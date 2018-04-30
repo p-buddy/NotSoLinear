@@ -6,6 +6,8 @@ layout: comic
 title: Home
 ---
 
-![Title]({{ "/assets/NSLTitle.jpg" | absolute_url }}){:class="comic-full-title"}]
+![Title]({{ "/assets/TOC.jpg" | absolute_url }}){:class="comic-full-title"}]
 
 ![Chapter 1]({{ "/assets/NSLCH1.jpg" | absolute_url }}){:class="comic-full"}]
+
+![Chapter 1]({{ "/assets/NSLCH2.jpg" | absolute_url }}){:class="comic-full"}]
